@@ -7,6 +7,6 @@ jobs:
     steps:
       - checkout
     - run:
-          name: Checkout the sourcecode
-          command: |
-            ./vendor/bin/phpstan analyze --level=5 -c phpstan.neon --error-format raw --no-progress packages | ./reviewdog -f=phpstan -reporter=github-pr-review
+        name: Checkout the sourcecode
+        command: |
+          ./vendor/bin/phpstan analyze --level=5 -c phpstan.neon --error-format raw --no-progress packages | ./reviewdog -f=phpstan -reporter=github-pr-review
