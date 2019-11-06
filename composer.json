@@ -3,5 +3,8 @@
         "phpstan": [
             "vendor/bin/phpstan"
         ]
-   }
+   },
+    "require-dev": {
+        "phpstan/phpstan": "^0.11.19"
+    }
 }

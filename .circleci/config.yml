@@ -6,7 +6,8 @@ jobs:
     working_directory: /var/www/html
     steps:
       - checkout
-    - run:
+      - run:
           name: Checkout the sourcecode
           command: |
-            ./vendor/bin/phpstan analyze --level=5 -c phpstan.neon --error-format raw --no-progress packages | ./reviewdog -f=phpstan -reporter=github-pr-review
+            set -x
+            ./vendor/bin/phpstan analyze --level=5 wtnb-test.php --memory-limit 1G --no-progress
