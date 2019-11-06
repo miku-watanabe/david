@@ -1,0 +1,12 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: php:7.3-fpm-alpine
+    working_directory: /var/www/html
+    steps:
+      - checkout
+      - run:
+          name: Composer install
+          command: php composer.phar install --no-interaction
+    
