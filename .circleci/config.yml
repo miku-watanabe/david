@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/php:7.3-fpm-alpine
+      - image: php:7.3-fpm-alpine
     working_directory: /var/www/html
     steps:
       - checkout
