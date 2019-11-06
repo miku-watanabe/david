@@ -8,5 +8,5 @@ jobs:
       - checkout
       - run:
           name: Composer install
-          command: php composer.phar install --no-interaction
+          command: composer install --no-interaction
     
