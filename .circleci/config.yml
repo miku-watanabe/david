@@ -10,4 +10,4 @@ jobs:
           name: Checkout the sourcecode
           command: |
             set -x
-            ./vendor/bin/phpstan analyze --level=5 wtnb-test.php --memory-limit 1G --no-progress
+            ./vendor/bin/phpstan analyze --level=5 src --memory-limit 1G --no-progress
